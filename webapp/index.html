@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Quick Start Tutorial:  Step 1: Ready
+    在开发环境中，创建文件夹 webapp，在其中创建index.html，并加入下述代码
+-->
+<!-- .\webapp\index.html -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quickstart Tutorial</title>
+	<script id="sap-ui-bootstrap"
+		src="https://sdk.openui5.org/resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_belize"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-resourceroots='{"Quickstart": "./"}'
+		data-sap-ui-onInit="module:Quickstart/index"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true">
+        // 使用该script标签，我们使用典型的引导参数加载并初始化 SAPUI5。例如，我们定义主题、控制库以及性能和兼容性标志。
+            //resourceroots定义应用程序所有资源的命名空间。这样，我们可以轻松引用我们将在此步骤中创建的其他文件。
+	</script>
+</head>
+<body class="sapUiBody" id="content"></body>
+</html>

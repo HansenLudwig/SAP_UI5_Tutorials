@@ -1,0 +1,24 @@
+<!-- Quick Start Tutorial:  Step 2: Steady
+    在webapp文件夹下新建App.view.xml文件
+    内容如下：
+-->  
+
+<!-- 现在，表现逻辑通过声明的方式定义在 XML view中
+UI控件位于View标签中定义的库中。本例中我们使用
+-->
+<mvc:View
+	controllerName="Quickstart.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<App>
+		<Page title="My App">
+			<Button
+				text="Steady..."
+				press=".onPress"
+				type="Emphasized"
+				class="sapUiSmallMargin"/>
+		</Page>
+	</App>
+</mvc:View>
+
