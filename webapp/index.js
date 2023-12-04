@@ -1,19 +1,38 @@
-/* Quick Start Tutorial:  Step 2: Steady
-    在此替换掉 Step 1 的大多数代码（Step 1的index.js已经被备份至其他文件）
-    新的index.js如下：
+/* Walkthrough Tutorial:
 */
 
-/* 在此移除了旧的内联按钮，加入了XML视图，将表示与控制逻辑分离。
-用新定义的命名空间Quickstart.App作为视图名称的前缀。
-视图是异步加载的。
-类似Step 1，定义后的XML视图被置于 id="content"的元素中
+/* 
+本脚本，其中包含本教程步骤的应用程序逻辑。
+出于安全原因，我们这样做是为了避免在 HTML 文件中直接包含可执行代码。该脚本将被从index.html调用。
+我们以声明的方式将其定义为模块。
 */
+
+/* Step 2
+sap.ui.define([], () => {
+	"use strict";
+	alert("UI5 is ready");
+});
+*/
+
+/* Step 3
+sap.ui.define([
+	"sap/m/Text"
+], (Text) => {
+	"use strict";
+	alert("UI5 is ready");
+
+	new Text({
+		text: "Hello World"
+	}).placeAt("content");
+});
+*/
+
 sap.ui.define([
 	"sap/ui/core/mvc/XMLView"
-], function (XMLView) {
+], (XMLView) => {
 	"use strict";
 
-	XMLView.create({viewName: "Quickstart.App"}).then(function (oView) {
-		oView.placeAt("content");
-	});
+	XMLView.create({
+		viewName: "ui5.walkthrough.view.App"
+	}).then((oView) => oView.placeAt("content"));
 });

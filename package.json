@@ -1,8 +1,16 @@
 {
-    "name": "ui5.walkthrough",
-    "version": "1.0.0",
-    "description": "The UI5 walkthrough application",
-    "scripts": {
-        "start": "ui5 serve -o index.html"
-    }
+  "name": "ui5.walkthrough",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The UI5 walkthrough application",
+  "scripts": {
+    "start": "ui5 serve -o index.html"
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "SAP SE",
+  "license": "ISC"
 }

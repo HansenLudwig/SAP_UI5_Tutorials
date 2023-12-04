@@ -7,18 +7,7 @@
 UI控件位于View标签中定义的库中。本例中我们使用
 -->
 <mvc:View
-	controllerName="Quickstart.App"
-	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
-	<App>
-		<Page title="My App">
-			<Button
-				text="Steady..."
-				press=".onPress"
-				type="Emphasized"
-				class="sapUiSmallMargin"/>
-		</Page>
-	</App>
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Text text="Hello World"/>
 </mvc:View>
-
