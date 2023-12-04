@@ -10,6 +10,9 @@
   "directories": {
     "lib": "lib"
   },
+  "devDependencies": {
+    "@ui5/cli": "^3.7.3"
+  },
   "keywords": [],
   "author": "SAP SE",
   "license": "ISC"
