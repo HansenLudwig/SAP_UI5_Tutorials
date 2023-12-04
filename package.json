@@ -1,0 +1,7 @@
+{
+  "name": "test",
+  "devDependencies": {
+    "@ui5/cli": "^3.7.2"
+  },
+  "version": "0.0.1"
+}
